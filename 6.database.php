@@ -1,0 +1,2 @@
+$sql = "SELECT product_categories.id, product_categories.name,COUNT( * ) AS Jumlah_product FROM products INNER JOIN \n"
+    . "product_categories ON products.category_id=product_categories.id GROUP BY category_id";
